@@ -48,7 +48,7 @@ create table product (
 )
 
 create table OrderItem ( 
-    OrderItemId int NOT NULL PRIMARY KEY  , 
+    OrderItemId int NOT NULL , 
     UnitPrice decimal (12,2) , 
     Quantity int ,
     FOREIGN KEY (OrdersId) REFERENCES Orders(OrdersId) ,
